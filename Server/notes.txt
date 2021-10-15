@@ -1,0 +1,17 @@
+{ "presets": ["@babel/preset-env"] }
+
+npm install @babel/preset-env @babel/cli @babel/node  --save-dev
+
+npm i mongoose cors helmet
+
+npm i dotenv
+
+export default async () => {
+  return mongoose.connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+  });
+};
+
