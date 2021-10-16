@@ -1,0 +1,3 @@
+[submodule "client"]
+	path = client
+	url = https://github.com/Aastha110/Zomato-master_shapeai.git
